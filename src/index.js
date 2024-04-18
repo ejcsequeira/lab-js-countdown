@@ -40,10 +40,10 @@ function startCountdown() {
 // ITERATION 3: Show Toast
 function showToast(message) {
   const toastElement = document.querySelector("#toast");
-  const toastMessage = document.querySelector("#toast-message");
+  const toastMessage = document.querySelector("toast-message");
   toastElement.classList.add("show");
   toastMessage.textContent = message;
-  const timeout = setTimeout(() => {
+  setTimeout(() => {
     toastElement.classList.remove("show");
   }, 3000);
 }
